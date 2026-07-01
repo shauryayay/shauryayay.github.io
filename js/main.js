@@ -48,11 +48,58 @@
   };
   window.addEventListener('scroll', activateNavLink, { passive: true });
 
-  // --- Expandable project cards ---
-  document.querySelectorAll('.project-card[data-expandable]').forEach(card => {
-    card.addEventListener('click', () => {
-      card.classList.toggle('project-card--open');
+  // --- Project modal ---
+  const modal = document.getElementById('projectModal');
+  const modalClose = document.getElementById('modalClose');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalDescription = document.getElementById('modalDescription');
+  const modalDetails = document.getElementById('modalDetails');
+  const modalTags = document.getElementById('modalTags');
+  const modalLink = document.getElementById('modalLink');
+
+  const openModal = (card) => {
+    const title = card.querySelector('.project-card__title').textContent;
+    const desc = card.querySelector('.project-card__description').textContent.trim();
+    const items = card.querySelectorAll('.project-card__expanded li');
+    const tags = card.querySelectorAll('.project-card__tags .tag');
+    const githubLink = card.querySelector('.project-card__header a').href;
+
+    modalTitle.textContent = title;
+    modalDescription.textContent = desc;
+    modalDetails.innerHTML = '';
+    items.forEach(li => {
+      const newLi = document.createElement('li');
+      newLi.textContent = li.textContent;
+      modalDetails.appendChild(newLi);
     });
+    modalTags.innerHTML = '';
+    tags.forEach(tag => {
+      const span = document.createElement('span');
+      span.className = 'tag';
+      span.textContent = tag.textContent;
+      modalTags.appendChild(span);
+    });
+    modalLink.href = githubLink;
+
+    modal.classList.add('modal-overlay--open');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeModal = () => {
+    modal.classList.remove('modal-overlay--open');
+    document.body.style.overflow = '';
+  };
+
+  document.querySelectorAll('.project-card[data-expandable]').forEach(card => {
+    card.addEventListener('click', () => openModal(card));
+  });
+
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
   });
 
   // --- Scroll reveal (IntersectionObserver) ---
