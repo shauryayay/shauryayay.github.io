@@ -353,13 +353,6 @@ img {
   margin-top: var(--spacing-sm);
 }
 
-.section__subtitle-heading {
-  font-size: var(--font-size-xl);
-  font-weight: 600;
-  margin-top: var(--spacing-2xl);
-  margin-bottom: var(--spacing-lg);
-  color: var(--color-text);
-}
 
 /* ===== About ===== */
 .about__grid {
@@ -675,43 +668,6 @@ img {
   border: 1px solid var(--color-accent);
 }
 
-/* ===== Leadership ===== */
-.leadership__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: var(--spacing-sm);
-}
-
-.leadership__item {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  padding: var(--spacing-md);
-  transition: box-shadow var(--transition);
-}
-
-.leadership__item:hover {
-  box-shadow: var(--shadow-sm);
-}
-
-.leadership__item h4 {
-  font-size: var(--font-size-sm);
-  font-weight: 600;
-  margin-bottom: 2px;
-}
-
-.leadership__item p {
-  font-size: var(--font-size-xs);
-  color: var(--color-text-muted);
-}
-
-.leadership__detail {
-  display: block;
-  font-size: var(--font-size-xs);
-  color: var(--color-text-muted);
-  margin-top: 4px;
-  line-height: 1.5;
-}
 
 /* ===== Contact ===== */
 .contact {
