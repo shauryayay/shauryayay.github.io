@@ -48,6 +48,13 @@
   };
   window.addEventListener('scroll', activateNavLink, { passive: true });
 
+  // --- Expandable project cards ---
+  document.querySelectorAll('.project-card[data-expandable]').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('project-card--open');
+    });
+  });
+
   // --- Scroll reveal (IntersectionObserver) ---
   const revealElements = document.querySelectorAll('.reveal');
 
