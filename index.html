@@ -7,7 +7,7 @@
   <title>Shaurya Rathore</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/img/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -51,10 +51,11 @@
 
   <!-- Page: Home -->
   <div class="page page--active" data-page="home">
+    <!-- Hero split -->
     <div class="home">
       <div class="home__left">
         <h1 class="home__name stagger-1">Hi, I'm Shaurya.</h1>
-        <p class="home__tagline stagger-2">Learning fast, building faster. I build backend systems and ML infrastructure that turn complex problems into clean APIs.</p>
+        <p class="home__tagline stagger-2">I build backend systems and ML infrastructure that turn complex problems into clean, developer-friendly APIs.</p>
         <div class="home__info stagger-3">
           <div class="home__columns">
             <div class="home__block">
@@ -67,13 +68,31 @@
             </div>
           </div>
         </div>
-        <div class="home__cta stagger-4">
-          <a href="#work" class="btn btn--primary" data-link>See my work</a>
-          <a href="assets/resume.pdf" class="btn btn--outline" target="_blank" rel="noopener">Resume</a>
-        </div>
       </div>
       <div class="home__right stagger-2">
         <img src="assets/img/profile.png" alt="Shaurya Rathore" class="home__photo">
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-arrow">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M6 9l6 6 6-6"/>
+      </svg>
+    </div>
+
+    <!-- See how section -->
+    <div class="see-how">
+      <h2 class="see-how__title reveal">See how:</h2>
+      <div class="see-how__cards">
+        <a href="#work" class="see-how__card reveal" data-link>
+          <span class="see-how__card-label">Work</span>
+          <span class="see-how__card-desc">Projects, experience, and skills</span>
+        </a>
+        <a href="#about" class="see-how__card reveal" data-link>
+          <span class="see-how__card-label">About</span>
+          <span class="see-how__card-desc">Who I am, education, and contact</span>
+        </a>
       </div>
     </div>
   </div>
