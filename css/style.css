@@ -120,16 +120,12 @@ img {
 .nav__logo {
   font-size: var(--font-size-xl);
   font-weight: 700;
-  color: var(--color-text);
+  color: var(--color-accent);
   letter-spacing: -0.5px;
-  background: linear-gradient(135deg, var(--color-accent), #7c3aed);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .nav__logo:hover {
-  opacity: 0.8;
+  color: var(--color-accent-hover);
 }
 
 .nav__menu {
@@ -188,14 +184,15 @@ img {
 
 /* ===== Hero ===== */
 .hero {
-  min-height: 60vh;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: var(--spacing-2xl) var(--spacing-md);
-  padding-top: calc(var(--nav-height) + var(--spacing-xl));
+  padding: var(--spacing-xl) var(--spacing-md);
+  padding-top: calc(var(--nav-height) + var(--spacing-lg));
+  padding-bottom: var(--spacing-xl);
   position: relative;
   overflow: hidden;
 }
@@ -227,7 +224,7 @@ img {
 .blob--2 {
   width: 350px;
   height: 350px;
-  background: rgba(124, 58, 237, 0.25);
+  background: rgba(37, 99, 235, 0.2);
   top: 10%;
   right: -8%;
   animation-duration: 10s;
@@ -400,7 +397,7 @@ img {
   left: 0;
   width: 48px;
   height: 3px;
-  background: linear-gradient(90deg, var(--color-accent), #7c3aed);
+  background: var(--color-accent);
   border-radius: 2px;
 }
 
@@ -505,7 +502,7 @@ img {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--color-accent), #7c3aed);
+  background: var(--color-accent);
   opacity: 0;
   transition: opacity var(--transition);
 }
@@ -746,13 +743,13 @@ img {
 .skills__tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
 }
 
 .skill-pill {
   display: inline-block;
-  padding: 0.4rem 0.85rem;
-  font-size: var(--font-size-sm);
+  padding: 0.25rem 0.6rem;
+  font-size: var(--font-size-xs);
   font-weight: 500;
   background: var(--color-tag-bg);
   color: var(--color-tag-text);
