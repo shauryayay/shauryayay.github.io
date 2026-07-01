@@ -324,26 +324,69 @@ img { max-width: 100%; display: block; }
 }
 
 .see-how__cards {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .see-how__card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  padding: 2rem 3rem;
-  border: 1px solid var(--color-border);
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
   border-radius: var(--radius);
   transition: all var(--transition);
   color: var(--color-text);
   text-decoration: none;
+  aspect-ratio: 4/3;
 }
 
-.see-how__card:hover {
+.see-how__card--img {
+  position: relative;
+}
+
+.see-how__card--img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.see-how__card--img:hover img {
+  transform: scale(1.05);
+}
+
+.see-how__card--img .see-how__card-label {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  padding-bottom: 1.25rem;
+}
+
+.see-how__card--img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);
+  z-index: 0;
+}
+
+.see-how__card--resume {
+  background: var(--color-accent-light);
+  border: 1px solid var(--color-border);
+  justify-content: center;
+  gap: 0.75rem;
+  color: var(--color-text);
+}
+
+.see-how__card--resume:hover {
   border-color: var(--color-text);
   transform: translateY(-3px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
@@ -353,11 +396,6 @@ img { max-width: 100%; display: block; }
   font-family: var(--font-display);
   font-size: var(--text-xl);
   font-weight: 400;
-}
-
-.see-how__card-desc {
-  font-size: var(--text-xs);
-  color: var(--color-muted);
 }
 
 /* Stagger animations */
@@ -844,6 +882,11 @@ img { max-width: 100%; display: block; }
 
   .home__cta {
     justify-content: center;
+  }
+
+  .see-how__cards {
+    grid-template-columns: 1fr;
+    max-width: 360px;
   }
 
   .projects-grid { grid-template-columns: 1fr; }
