@@ -362,6 +362,15 @@ img {
   align-items: start;
 }
 
+.about__photo {
+  width: 220px;
+  height: 220px;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  border: 3px solid var(--color-surface);
+  box-shadow: var(--shadow-md);
+}
+
 .about__image-placeholder {
   width: 220px;
   height: 220px;
@@ -789,6 +798,7 @@ img {
     text-align: center;
   }
 
+  .about__photo,
   .about__image-placeholder {
     width: 160px;
     height: 160px;
