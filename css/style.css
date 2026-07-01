@@ -576,6 +576,106 @@ img { max-width: 100%; display: block; }
   color: var(--color-text) !important;
 }
 
+/* ===== Connect Section ===== */
+.connect {
+  background: var(--color-accent-light);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.connect__title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.connect__desc {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  max-width: 520px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.7;
+}
+
+.connect__grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.connect__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text);
+  padding: 0.6rem 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface);
+  transition: all var(--transition);
+  text-decoration: none;
+}
+
+.connect__item:hover {
+  border-color: var(--color-text);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  padding: 1.25rem 2rem;
+  font-size: var(--text-xs);
+}
+
+.footer__container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer__socials a {
+  color: var(--color-muted);
+  display: flex;
+  transition: color var(--transition);
+}
+
+.footer__socials a:hover { color: var(--color-text); }
+
+.footer__top {
+  background: none;
+  border: none;
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  cursor: pointer;
+  transition: color var(--transition);
+}
+
+.footer__top:hover { color: var(--color-text); }
+
 /* ===== Modal ===== */
 .modal-overlay {
   position: fixed; inset: 0;
