@@ -188,13 +188,14 @@ img {
 
 /* ===== Hero ===== */
 .hero {
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: var(--spacing-3xl) var(--spacing-md);
+  padding: var(--spacing-2xl) var(--spacing-md);
+  padding-top: calc(var(--nav-height) + var(--spacing-xl));
   position: relative;
   overflow: hidden;
 }
@@ -363,7 +364,7 @@ img {
 
 /* ===== Sections ===== */
 .section {
-  padding: var(--spacing-3xl) var(--spacing-md);
+  padding: var(--spacing-2xl) var(--spacing-md);
 }
 
 .section:nth-child(even) {
