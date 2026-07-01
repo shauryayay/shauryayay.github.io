@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Shaurya Rathore — Software Engineer specializing in backend systems, ML infrastructure, and cloud-native APIs.">
+  <meta name="description" content="Shaurya Rathore - Software Engineer specializing in backend systems, ML infrastructure, and cloud-native APIs.">
   <title>Shaurya Rathore</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,10 +34,12 @@
   <main>
     <!-- Hero -->
     <section class="hero" id="hero">
+      <div class="hero__bg"></div>
       <div class="hero__content reveal">
         <p class="hero__greeting">Hi, I'm</p>
         <h1 class="hero__name">Shaurya Rathore</h1>
-        <p class="hero__tagline">Software Engineer &mdash; Backend &amp; ML Infrastructure</p>
+        <p class="hero__tagline">Software Engineer / Backend &amp; ML Infrastructure</p>
+        <p class="hero__sub">Building developer platforms at NVIDIA. Turning complex systems into clean APIs.</p>
         <div class="hero__cta">
           <a href="#projects" class="btn btn--primary">View Projects</a>
           <a href="assets/resume.pdf" class="btn btn--outline" target="_blank" rel="noopener">Resume</a>
@@ -64,19 +66,33 @@
           </div>
           <div class="about__text reveal">
             <p>
-              I'm a Computer Science graduate from Amity University (2026) with a minor in Data Science. 
-              I love turning complex infrastructure problems into clean, developer-friendly APIs.
+              I'm a Computer Science graduate from Amity University (2026) with a minor in Data Science &amp; Analytics.
+              I love turning complex infrastructure problems into developer-friendly APIs.
             </p>
             <p>
-              Most recently, I built backend systems at <strong>NVIDIA</strong> — automating database provisioning 
+              Most recently, I built backend systems at <strong>NVIDIA</strong>, automating database provisioning 
               that cut setup time from days to minutes. Before that, I developed hybrid recommendation systems 
               at <strong>Winniio AB</strong> combining transformer embeddings with learning-to-rank pipelines, 
               and designed classified document management systems at <strong>DRDO</strong>.
             </p>
             <p>
-              I'm drawn to the intersection of backend engineering and ML — building the infrastructure 
+              I'm drawn to the intersection of backend engineering and ML: building the infrastructure 
               that makes models useful in production.
             </p>
+            <div class="about__highlights">
+              <div class="about__highlight">
+                <span class="about__highlight-number">6+</span>
+                <span class="about__highlight-label">Internships</span>
+              </div>
+              <div class="about__highlight">
+                <span class="about__highlight-number">9.17</span>
+                <span class="about__highlight-label">CGPA</span>
+              </div>
+              <div class="about__highlight">
+                <span class="about__highlight-number">4x</span>
+                <span class="about__highlight-label">Merit Scholar</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -86,12 +102,13 @@
     <section class="section projects" id="projects">
       <div class="container">
         <h2 class="section__title reveal">Projects</h2>
+        <p class="section__subtitle reveal">Things I've built to solve real problems</p>
         <div class="projects__grid">
 
           <article class="project-card reveal">
             <div class="project-card__header">
               <svg class="project-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
+                <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
               <a href="https://github.com/shauryayay/cloudpilot" target="_blank" rel="noopener" aria-label="GitHub">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -116,7 +133,7 @@
           <article class="project-card reveal">
             <div class="project-card__header">
               <svg class="project-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
+                <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
               </svg>
               <a href="https://github.com/shauryayay/deployer" target="_blank" rel="noopener" aria-label="GitHub">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -126,7 +143,7 @@
             </div>
             <h3 class="project-card__title">Deployer</h3>
             <p class="project-card__description">
-              ML model serving platform. Upload a trained sklearn, PyTorch, or TensorFlow model — 
+              ML model serving platform. Upload a trained sklearn, PyTorch, or TensorFlow model and 
               it auto-generates a containerized FastAPI inference endpoint with health checks and async predictions.
             </p>
             <div class="project-card__tags">
@@ -141,7 +158,8 @@
           <article class="project-card reveal">
             <div class="project-card__header">
               <svg class="project-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
+                <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
               </svg>
               <a href="https://github.com/shauryayay/book-nlp" target="_blank" rel="noopener" aria-label="GitHub">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -234,11 +252,11 @@
             <div class="timeline__content">
               <div class="timeline__header">
                 <h3 class="timeline__role">Software Engineering Intern</h3>
-                <span class="timeline__date">Jan 2026 &ndash; Jul 2026</span>
+                <span class="timeline__date">Jan 2026 - Jul 2026</span>
               </div>
-              <p class="timeline__company">NVIDIA &bull; Bangalore</p>
+              <p class="timeline__company">NVIDIA &middot; Bangalore</p>
               <ul class="timeline__details">
-                <li>Built backend APIs for automated database provisioning across PostgreSQL, MySQL, Neo4j, and DocumentDB using AWS RDS — reduced manual setup from 2 days to 15 minutes</li>
+                <li>Built backend APIs for automated database provisioning across PostgreSQL, MySQL, Neo4j, and DocumentDB using AWS RDS, reducing manual setup from 2 days to 15 minutes</li>
                 <li>Developed self-service internal platform enabling engineering teams to provision production-ready databases without DBA intervention</li>
               </ul>
             </div>
@@ -249,11 +267,11 @@
             <div class="timeline__content">
               <div class="timeline__header">
                 <h3 class="timeline__role">R&amp;D Intern (AI/ML)</h3>
-                <span class="timeline__date">Aug 2025 &ndash; Jan 2026</span>
+                <span class="timeline__date">Aug 2025 - Jan 2026</span>
               </div>
-              <p class="timeline__company">Winniio AB &bull; Remote</p>
+              <p class="timeline__company">Winniio AB &middot; Remote (Sweden)</p>
               <ul class="timeline__details">
-                <li>Built SimuMatch, a hybrid recommendation system combining SBERT embeddings, LightGBM LambdaRank, and LLaMA-3.3-70B — achieved NDCG@5 of 0.870 (+6.2% over baseline)</li>
+                <li>Built SimuMatch, a hybrid recommendation system combining SBERT embeddings, LightGBM LambdaRank, and LLaMA-3.3-70B, achieving NDCG@5 of 0.870 (+6.2% over baseline)</li>
                 <li>Applied SHAP explainability to surface recommendation drivers; deployed as a Streamlit web app with feedback-driven retraining</li>
               </ul>
             </div>
@@ -264,9 +282,9 @@
             <div class="timeline__content">
               <div class="timeline__header">
                 <h3 class="timeline__role">Summer Intern</h3>
-                <span class="timeline__date">May 2025 &ndash; Jul 2025</span>
+                <span class="timeline__date">May 2025 - Jul 2025</span>
               </div>
-              <p class="timeline__company">DRDO (SSPL Lab) &bull; New Delhi</p>
+              <p class="timeline__company">DRDO (SSPL Lab) &middot; New Delhi</p>
               <ul class="timeline__details">
                 <li>Designed a classified memo management system for 14 departments with role-based access controls enforcing document sensitivity levels</li>
                 <li>Architected database schema for end-to-end memo lifecycle with audit trails for compliance</li>
@@ -274,6 +292,66 @@
             </div>
           </div>
 
+          <div class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <h3 class="timeline__role">Data Science Intern</h3>
+                <span class="timeline__date">Jan 2025 - Feb 2025</span>
+              </div>
+              <p class="timeline__company">Kernel Synergy</p>
+              <ul class="timeline__details">
+                <li>Worked on data analysis and predictive modeling research projects</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <h3 class="timeline__role">Software Engineering Fellow</h3>
+                <span class="timeline__date">Jul 2024 - Sep 2024</span>
+              </div>
+              <p class="timeline__company">Headstarter AI</p>
+              <ul class="timeline__details">
+                <li>Built 5 AI projects in a fellowship cohort, culminating in a team capstone project</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <h3 class="timeline__role">Financial Analyst &amp; Investment Banking Analyst</h3>
+                <span class="timeline__date">Feb 2023 - Apr 2023</span>
+              </div>
+              <p class="timeline__company">Finlatics</p>
+              <ul class="timeline__details">
+                <li>Maintained a trading portfolio on a real-time simulator and created research reports evaluating investment potential in companies and startups</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Leadership -->
+        <h3 class="section__subtitle-heading reveal">Leadership &amp; Activities</h3>
+        <div class="leadership__grid">
+          <div class="leadership__item reveal">
+            <h4>Vice-President</h4>
+            <p>Software Engineering Club &middot; Jul 2023 - Jun 2025</p>
+            <span class="leadership__detail">Organized the D2D conference sponsored by GitHub, hosted at Zomato, with 200+ participants</span>
+          </div>
+          <div class="leadership__item reveal">
+            <h4>GDG On Campus Core Team</h4>
+            <p>Google Developer Groups, Amity &middot; Sep 2024 - Jun 2025</p>
+          </div>
+          <div class="leadership__item reveal">
+            <h4>House Captain</h4>
+            <p>Birla Vidya Niketan &middot; Apr 2020 - Apr 2021</p>
+          </div>
         </div>
       </div>
     </section>
@@ -317,7 +395,7 @@
   </main>
 
   <footer class="footer">
-    <p>&copy; 2026 Shaurya Rathore</p>
+    <p>&copy; 2026 Shaurya Rathore. Built from scratch with HTML, CSS &amp; JS.</p>
   </footer>
 
   <script src="js/main.js"></script>
