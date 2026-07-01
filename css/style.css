@@ -726,7 +726,7 @@ img {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-sm) var(--spacing-md);
   transition: box-shadow var(--transition);
 }
 
@@ -740,7 +740,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--color-text-muted);
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
 }
 
 .skills__tags {
