@@ -1,6 +1,6 @@
 # shaurya.github.io
 
-Personal portfolio site — vanilla HTML, CSS, JS. Deployed on GitHub Pages.
+Personal portfolio site. Vanilla HTML, CSS, JS. Deployed on GitHub Pages.
 
 ## Local Development
 
