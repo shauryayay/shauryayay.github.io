@@ -549,22 +549,27 @@ img {
 }
 
 .project-card__expanded {
-  max-height: 0;
+  display: grid;
+  grid-template-rows: 0fr;
   overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.3s ease;
+  transition: grid-template-rows 0.4s ease, opacity 0.3s ease;
   opacity: 0;
-  margin-bottom: 0;
+}
+
+.project-card__expanded > ul {
+  overflow: hidden;
 }
 
 .project-card--open .project-card__expanded {
-  max-height: 400px;
+  grid-template-rows: 1fr;
   opacity: 1;
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
 }
 
 .project-card__expanded ul {
   list-style: none;
-  padding: var(--spacing-sm) 0;
+  padding: var(--spacing-sm) 0 0;
+  margin-top: var(--spacing-sm);
   border-top: 1px solid var(--color-border);
 }
 
